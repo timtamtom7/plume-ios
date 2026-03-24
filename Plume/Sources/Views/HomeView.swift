@@ -3,6 +3,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var bookStore: BookStore
     @EnvironmentObject var subscriptionManager: SubscriptionManager
+    @EnvironmentObject var challengeStore: ChallengeStore
     @State private var showingAddBook = false
     @State private var showingUpdateProgress = false
     @State private var showingSettings = false
@@ -22,6 +23,11 @@ struct HomeView: View {
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 24) {
+                        // Reading Challenge Progress
+                        if let challenge = challengeStore.currentChallenge {
+                            challengeProgressSection(challenge)
+                        }
+
                         // Currently Reading
                         if let current = bookStore.currentlyReading.first {
                             currentlyReadingSection(current)
@@ -188,6 +194,76 @@ struct HomeView: View {
     }
 
     @ViewBuilder
+    private func challengeProgressSection(_ challenge: ReadingChallenge) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("Reading Challenge \(challenge.year)")
+                    .font(.custom("Georgia-Bold", size: 13))
+                    .foregroundColor(.plumeTextSecondary)
+                    .textCase(.uppercase)
+                    .tracking(1.2)
+
+                Spacer()
+
+                if !challenge.isOnTrack {
+                    Image(systemName: "exclamationmark.circle.fill")
+                        .foregroundColor(.orange)
+                }
+            }
+
+            VStack(spacing: 0) {
+                HStack(spacing: 16) {
+                    // Progress ring
+                    ZStack {
+                        Circle()
+                            .stroke(Color.plumeTextSecondary.opacity(0.1), lineWidth: 8)
+
+                        Circle()
+                            .trim(from: 0, to: CGFloat(challenge.progressPercent))
+                            .stroke(
+                                AngularGradient(
+                                    colors: [.plumeAccent, .plumeAccentSecondary],
+                                    center: .center
+                                ),
+                                style: StrokeStyle(lineWidth: 8, lineCap: .round)
+                            )
+                            .rotationEffect(.degrees(-90))
+
+                        VStack(spacing: 0) {
+                            Text("\(challenge.booksCompleted)")
+                                .font(.system(size: 22, weight: .bold, design: .monospaced))
+                                .foregroundColor(.plumeTextPrimary)
+                            Text("/\(challenge.annualGoal)")
+                                .font(.system(size: 11, design: .monospaced))
+                                .foregroundColor(.plumeTextSecondary)
+                        }
+                    }
+                    .frame(width: 70, height: 70)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        if let message = challenge.paceMessage {
+                            Text(message)
+                                .font(.system(size: 13))
+                                .foregroundColor(challenge.isOnTrack ? .plumeAccent : .orange)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+
+                        Text("\(challenge.booksRemaining) books to reach your goal")
+                            .font(.system(size: 12))
+                            .foregroundColor(.plumeTextSecondary)
+                    }
+
+                    Spacer()
+                }
+                .padding(16)
+            }
+            .background(Color.plumeSurface)
+            .cornerRadius(12)
+            .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 3)
+        }
+    }
+
+    @ViewBuilder
     private var librarySection: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -287,5 +363,6 @@ struct ProgressBar: View {
         HomeView()
             .environmentObject(BookStore())
             .environmentObject(SubscriptionManager.shared)
+            .environmentObject(ChallengeStore())
     }
 }

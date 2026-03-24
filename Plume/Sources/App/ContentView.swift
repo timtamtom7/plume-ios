@@ -3,29 +3,52 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var bookStore: BookStore
     @StateObject private var subscriptionManager = SubscriptionManager.shared
+    @State private var selectedTab = 0
     @State private var showOnboarding = false
 
     var body: some View {
-        NavigationStack {
-            Group {
-                if bookStore.allBooks.isEmpty {
-                    EmptyStateView {
-                        // The empty state button will be handled by HomeView's sheet
-                    }
-                } else {
-                    HomeView()
-                }
+        TabView(selection: $selectedTab) {
+            NavigationStack {
+                HomeView()
             }
-            .sheet(isPresented: $showOnboarding) {
-                OnboardingView()
+            .tabItem {
+                Label("Home", systemImage: "house.fill")
             }
-            .onAppear {
-                if !subscriptionManager.hasSeenOnboarding {
-                    showOnboarding = true
-                }
+            .tag(0)
+
+            NavigationStack {
+                ChallengeView()
+            }
+            .tabItem {
+                Label("Challenges", systemImage: "target")
+            }
+            .tag(1)
+
+            NavigationStack {
+                RecommendationsView()
+            }
+            .tabItem {
+                Label("Discover", systemImage: "sparkles")
+            }
+            .tag(2)
+
+            NavigationStack {
+                ExportView()
+            }
+            .tabItem {
+                Label("Export", systemImage: "square.and.arrow.up")
+            }
+            .tag(3)
+        }
+        .tint(.plumeAccent)
+        .sheet(isPresented: $showOnboarding) {
+            OnboardingView()
+        }
+        .onAppear {
+            if !subscriptionManager.hasSeenOnboarding {
+                showOnboarding = true
             }
         }
-        .environmentObject(subscriptionManager)
     }
 }
 
