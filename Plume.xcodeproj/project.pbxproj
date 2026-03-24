@@ -10,17 +10,24 @@
 		15B366C19AC8B118C73182B9 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFDCD78EACC22940EF3955 /* BookDetailView.swift */; };
 		1DAFFE8957497873671F1A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D628E4D91EB5626624539AE /* Assets.xcassets */; };
 		1FC9D94A6382F0DD01DDB0FA /* CoverPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CE6600538694A5A2FB30FD /* CoverPlaceholderView.swift */; };
+		20C3635F477CC8277D35A353 /* MultiPageScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45EAB094796B7E4FCA2F23 /* MultiPageScanView.swift */; };
+		2275DCC68547D3F6AA661704 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB0346EF173CC4CB89CF67D /* Quote.swift */; };
+		261C14B114DB5F11B6FCD63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CC11217101DE73CF678AD3 /* Assets.xcassets */; };
+		2624255C03B1817DEF16A538 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225AB9F2CE2F79B5C8083 /* OCRService.swift */; };
 		262B7A61521C766305BE3D8C /* RealContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07177F1A40D2C99A7ABBE9D /* RealContent.swift */; };
 		41A99F096F9F538C90CC3FAD /* QuoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AE00D202F3F63CE997AE9 /* QuoteCardView.swift */; };
 		43584545CED13D07A2AD655B /* BookRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE049B8BA026C2DD524B5E44 /* BookRecommendation.swift */; };
+		52F2C82CB73C88B3C295F082 /* PlumeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D6A5A840AA0CE7D209362 /* PlumeWidget.swift */; };
 		54580418E528A9915793F271 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563E0FD1CBA3BBDC07B7ED86 /* Book.swift */; };
 		567C5251EBE55FA3530B5D39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3E3E53C22E8B5138AB40D /* HomeView.swift */; };
 		61BE574B62761F9D8B120896 /* SubscriptionTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE74CC189F3EFB2284784E /* SubscriptionTier.swift */; };
+		62B0ACA9A1FBDC7F225E9BC9 /* PDFImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75B212D041CBE1E177309E /* PDFImportView.swift */; };
 		62DB8C2F25DABD9F73972083 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76908928FCD72953DDBC845 /* SubscriptionManager.swift */; };
 		672197288B366AF404989588 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0150B0938E4CC698F06ACE5 /* SettingsView.swift */; };
 		6A1BAAA14C65B223B0DEFD00 /* RecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173CA2736F6685D2DDE29618 /* RecommendationsView.swift */; };
 		6B593D51EE0E216BC0BDE75D /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953E567B3190675D61EFFC3 /* LibraryView.swift */; };
 		6E9B6D5BD668BEF5D2B09517 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC1CC47D124FCD98BD2266 /* ChallengeView.swift */; };
+		71D0D6CB36D6FA7350FFA123 /* PlumeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E44CD8BB9079FF1621D69F /* PlumeWidgetBundle.swift */; };
 		73D8F2F639E78CEF3C136139 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3D1F3F19FD64E1867BF6F /* ExportView.swift */; };
 		97BBAF2D287AAE00DDD9E552 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD03B2E32D942A01B6C208EB /* ImageStorage.swift */; };
 		97E3065CCE60687C937DE780 /* PlumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85F23765011AC60AEC734C /* PlumeApp.swift */; };
@@ -29,10 +36,12 @@
 		AA92A4B4A9C7C6D3FB493EFD /* BookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47662485E6D3FA5D5080083 /* BookStore.swift */; };
 		ABEEAFAEBACD8693D442FF21 /* AppStoreListing.md in Resources */ = {isa = PBXBuildFile; fileRef = C100DCC55CEFF979AF3E3843 /* AppStoreListing.md */; };
 		B3E73D63C5AD27AAF7713F3F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AA418D4D9B4B22D82F0EE9 /* CameraView.swift */; };
+		B3FA9F0083DA92EDE32CDF22 /* PlumeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E55C1DC7989602FF589C64E3 /* PlumeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B528B6142351DCF4109D8D2E /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C5DF158A30C626CE63741 /* ExportService.swift */; };
 		B6D6ED7E5E65659844F1BFA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCBDB15DC046612A807CEB8 /* OnboardingView.swift */; };
 		C4ABFFFBED456B0DA853FAC0 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0006880CC4274EA8AA334B20 /* SQLite */; };
 		D4E7193225F9BBC0388BD0CB /* UpdateProgressSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71F74148479C49D56AF1 /* UpdateProgressSheet.swift */; };
+		DB20BC4DBCB92487A5B8B94C /* CommunityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773548346872BF8A09C4297E /* CommunityFeedView.swift */; };
 		DDA1B7AA99FD7B82CB395974 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8F445FD015E3B1ABC59B6 /* PricingView.swift */; };
 		E1F2D76C7612215C08977439 /* AddBookSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF8C57ECC1DFE45E58F0C1 /* AddBookSheet.swift */; };
 		EE3B7C439CC0566D4ED17E75 /* ReadingChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68B4662FF4F64F4748FDD0F /* ReadingChallenge.swift */; };
@@ -40,20 +49,53 @@
 		F7975E853E3BE88050CFD220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14A54FF572E2F702FA729B2 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		13875809F56EEA59E7C2B633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490920AC0DF09CA1F782BD25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0779B04EA02FBC3577AB17CD;
+			remoteInfo = PlumeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DBDCA7A2B6361806D97E49D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3FA9F0083DA92EDE32CDF22 /* PlumeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		11D3E3E53C22E8B5138AB40D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		173CA2736F6685D2DDE29618 /* RecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsView.swift; sourceTree = "<group>"; };
+		197FA77E1F43291245D82A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1B45EAB094796B7E4FCA2F23 /* MultiPageScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPageScanView.swift; sourceTree = "<group>"; };
 		25FC1CC47D124FCD98BD2266 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		296A5CC45B1A6DD1021431BC /* ProgressEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressEntry.swift; sourceTree = "<group>"; };
 		2B384BC00C7D06DE1B5CBE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2D85F23765011AC60AEC734C /* PlumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlumeApp.swift; sourceTree = "<group>"; };
+		3C75B212D041CBE1E177309E /* PDFImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFImportView.swift; sourceTree = "<group>"; };
 		4C5B8813F74E7721E37CDFCC /* Plume.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Plume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E0FD1CBA3BBDC07B7ED86 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		56E44CD8BB9079FF1621D69F /* PlumeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlumeWidgetBundle.swift; sourceTree = "<group>"; };
 		58AA418D4D9B4B22D82F0EE9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5A4A71F74148479C49D56AF1 /* UpdateProgressSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProgressSheet.swift; sourceTree = "<group>"; };
+		60CC11217101DE73CF678AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DB0346EF173CC4CB89CF67D /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		773548346872BF8A09C4297E /* CommunityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFeedView.swift; sourceTree = "<group>"; };
 		7953E567B3190675D61EFFC3 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		7B2AE00D202F3F63CE997AE9 /* QuoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCardView.swift; sourceTree = "<group>"; };
 		7D628E4D91EB5626624539AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0D6A5A840AA0CE7D209362 /* PlumeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlumeWidget.swift; sourceTree = "<group>"; };
+		850225AB9F2CE2F79B5C8083 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		8FBE74CC189F3EFB2284784E /* SubscriptionTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTier.swift; sourceTree = "<group>"; };
 		9AB8F445FD015E3B1ABC59B6 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		9EF44306EA3A0931C875C4E1 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
@@ -68,6 +110,7 @@
 		D3B3D1F3F19FD64E1867BF6F /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		D68B4662FF4F64F4748FDD0F /* ReadingChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingChallenge.swift; sourceTree = "<group>"; };
 		E47662485E6D3FA5D5080083 /* BookStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStore.swift; sourceTree = "<group>"; };
+		E55C1DC7989602FF589C64E3 /* PlumeWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PlumeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAF8C57ECC1DFE45E58F0C1 /* AddBookSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookSheet.swift; sourceTree = "<group>"; };
 		EFA5AF0B286567056B837421 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F0150B0938E4CC698F06ACE5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -98,12 +141,24 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		31F24E79E2A5DDE8909823ED /* PlumeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				60CC11217101DE73CF678AD3 /* Assets.xcassets */,
+				197FA77E1F43291245D82A62 /* Info.plist */,
+				7E0D6A5A840AA0CE7D209362 /* PlumeWidget.swift */,
+				56E44CD8BB9079FF1621D69F /* PlumeWidgetBundle.swift */,
+			);
+			path = PlumeWidget;
+			sourceTree = "<group>";
+		};
 		5284DBFB42FF9BBF082FCF8D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				563E0FD1CBA3BBDC07B7ED86 /* Book.swift */,
 				FE049B8BA026C2DD524B5E44 /* BookRecommendation.swift */,
 				296A5CC45B1A6DD1021431BC /* ProgressEntry.swift */,
+				6DB0346EF173CC4CB89CF67D /* Quote.swift */,
 				D68B4662FF4F64F4748FDD0F /* ReadingChallenge.swift */,
 				8FBE74CC189F3EFB2284784E /* SubscriptionTier.swift */,
 			);
@@ -116,6 +171,7 @@
 				E47662485E6D3FA5D5080083 /* BookStore.swift */,
 				B32C5DF158A30C626CE63741 /* ExportService.swift */,
 				BD03B2E32D942A01B6C208EB /* ImageStorage.swift */,
+				850225AB9F2CE2F79B5C8083 /* OCRService.swift */,
 				A76908928FCD72953DDBC845 /* SubscriptionManager.swift */,
 			);
 			path = Services;
@@ -124,6 +180,7 @@
 		9E563A82396A3AB48723A854 = {
 			isa = PBXGroup;
 			children = (
+				31F24E79E2A5DDE8909823ED /* PlumeWidget */,
 				9F708178FDCA55F53C88ADF4 /* Resources */,
 				EDF93B1CC809E3466F3F2727 /* Sources */,
 				E320BC3F521CF9D04422B14E /* Products */,
@@ -147,11 +204,14 @@
 				F2CFDCD78EACC22940EF3955 /* BookDetailView.swift */,
 				58AA418D4D9B4B22D82F0EE9 /* CameraView.swift */,
 				25FC1CC47D124FCD98BD2266 /* ChallengeView.swift */,
+				773548346872BF8A09C4297E /* CommunityFeedView.swift */,
 				9EF44306EA3A0931C875C4E1 /* EmptyStateView.swift */,
 				D3B3D1F3F19FD64E1867BF6F /* ExportView.swift */,
 				11D3E3E53C22E8B5138AB40D /* HomeView.swift */,
 				7953E567B3190675D61EFFC3 /* LibraryView.swift */,
+				1B45EAB094796B7E4FCA2F23 /* MultiPageScanView.swift */,
 				CCCBDB15DC046612A807CEB8 /* OnboardingView.swift */,
+				3C75B212D041CBE1E177309E /* PDFImportView.swift */,
 				9AB8F445FD015E3B1ABC59B6 /* PricingView.swift */,
 				173CA2736F6685D2DDE29618 /* RecommendationsView.swift */,
 				F0150B0938E4CC698F06ACE5 /* SettingsView.swift */,
@@ -181,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5B8813F74E7721E37CDFCC /* Plume.app */,
+				E55C1DC7989602FF589C64E3 /* PlumeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +263,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0779B04EA02FBC3577AB17CD /* PlumeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE71ED14C37030AD07AC7C3 /* Build configuration list for PBXNativeTarget "PlumeWidgetExtension" */;
+			buildPhases = (
+				15E8311739577F4BF8F70092 /* Sources */,
+				9F06CE46C7126F20466A07E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlumeWidgetExtension;
+			productName = PlumeWidgetExtension;
+			productReference = E55C1DC7989602FF589C64E3 /* PlumeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		529F314F682C51D3C311707B /* Plume */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864B2103BCF48A91B0B5FFFD /* Build configuration list for PBXNativeTarget "Plume" */;
@@ -209,10 +286,12 @@
 				2852EE0A009635E1B0BFD869 /* Sources */,
 				64E2D0321ABF09BF5EB6BF43 /* Resources */,
 				18F31D4345C47E32F73F53B1 /* Frameworks */,
+				4DBDCA7A2B6361806D97E49D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D006CE129480173A0856BE24 /* PBXTargetDependency */,
 			);
 			name = Plume;
 			packageProductDependencies = (
@@ -231,6 +310,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					0779B04EA02FBC3577AB17CD = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
 					529F314F682C51D3C311707B = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
@@ -253,6 +336,7 @@
 			projectRoot = "";
 			targets = (
 				529F314F682C51D3C311707B /* Plume */,
+				0779B04EA02FBC3577AB17CD /* PlumeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -267,9 +351,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F06CE46C7126F20466A07E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261C14B114DB5F11B6FCD63D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		15E8311739577F4BF8F70092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F2C82CB73C88B3C295F082 /* PlumeWidget.swift in Sources */,
+				71D0D6CB36D6FA7350FFA123 /* PlumeWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2852EE0A009635E1B0BFD869 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +383,7 @@
 				B3E73D63C5AD27AAF7713F3F /* CameraView.swift in Sources */,
 				6E9B6D5BD668BEF5D2B09517 /* ChallengeView.swift in Sources */,
 				A6C4687D069F1F1CCDB903F4 /* ColorExtension.swift in Sources */,
+				DB20BC4DBCB92487A5B8B94C /* CommunityFeedView.swift in Sources */,
 				F7975E853E3BE88050CFD220 /* ContentView.swift in Sources */,
 				1FC9D94A6382F0DD01DDB0FA /* CoverPlaceholderView.swift in Sources */,
 				9E5F5B2CE7C64EF09A7B2363 /* EmptyStateView.swift in Sources */,
@@ -290,10 +392,14 @@
 				567C5251EBE55FA3530B5D39 /* HomeView.swift in Sources */,
 				97BBAF2D287AAE00DDD9E552 /* ImageStorage.swift in Sources */,
 				6B593D51EE0E216BC0BDE75D /* LibraryView.swift in Sources */,
+				20C3635F477CC8277D35A353 /* MultiPageScanView.swift in Sources */,
+				2624255C03B1817DEF16A538 /* OCRService.swift in Sources */,
 				B6D6ED7E5E65659844F1BFA2 /* OnboardingView.swift in Sources */,
+				62B0ACA9A1FBDC7F225E9BC9 /* PDFImportView.swift in Sources */,
 				97E3065CCE60687C937DE780 /* PlumeApp.swift in Sources */,
 				DDA1B7AA99FD7B82CB395974 /* PricingView.swift in Sources */,
 				F3A3FB245E2BE205C8A98E9F /* ProgressEntry.swift in Sources */,
+				2275DCC68547D3F6AA661704 /* Quote.swift in Sources */,
 				41A99F096F9F538C90CC3FAD /* QuoteCardView.swift in Sources */,
 				EE3B7C439CC0566D4ED17E75 /* ReadingChallenge.swift in Sources */,
 				262B7A61521C766305BE3D8C /* RealContent.swift in Sources */,
@@ -306,6 +412,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D006CE129480173A0856BE24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0779B04EA02FBC3577AB17CD /* PlumeWidgetExtension */;
+			targetProxy = 13875809F56EEA59E7C2B633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		22E1F075E86E43889D8BE239 /* Debug */ = {
@@ -382,6 +496,42 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		7EC99BB739AEBF65D9F0E3F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlumeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plume.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CA8CC13F70598B084F9A993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlumeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plume.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -486,6 +636,15 @@
 			buildConfigurations = (
 				22E1F075E86E43889D8BE239 /* Debug */,
 				E94DF51F0BA3A73B5CDB7189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAE71ED14C37030AD07AC7C3 /* Build configuration list for PBXNativeTarget "PlumeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EC99BB739AEBF65D9F0E3F9 /* Debug */,
+				8CA8CC13F70598B084F9A993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

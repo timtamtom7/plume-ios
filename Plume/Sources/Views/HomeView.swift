@@ -9,6 +9,8 @@ struct HomeView: View {
     @State private var showingSettings = false
     @State private var showingPricing = false
     @State private var showingBookLimitAlert = false
+    @State private var showingMultiPageScan = false
+    @State private var showingPDFImport = false
     @State private var selectedBook: Book?
 
     var body: some View {
@@ -32,6 +34,9 @@ struct HomeView: View {
                         if let current = bookStore.currentlyReading.first {
                             currentlyReadingSection(current)
                         }
+
+                        // Scan Tools Section (Round 5)
+                        scanToolsSection
 
                         // Library
                         librarySection
@@ -78,6 +83,12 @@ struct HomeView: View {
         .sheet(isPresented: $showingPricing) {
             PricingView()
         }
+        .sheet(isPresented: $showingMultiPageScan) {
+            MultiPageScanView()
+        }
+        .sheet(isPresented: $showingPDFImport) {
+            PDFImportView()
+        }
         .alert("Book Limit Reached", isPresented: $showingBookLimitAlert) {
             Button("Upgrade") {
                 showingPricing = true
@@ -93,6 +104,90 @@ struct HomeView: View {
             showingAddBook = true
         } else {
             showingBookLimitAlert = true
+        }
+    }
+
+    @ViewBuilder
+    private var scanToolsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Scan & Import")
+                .font(.custom("Georgia-Bold", size: 13))
+                .foregroundColor(.plumeTextSecondary)
+                .textCase(.uppercase)
+                .tracking(1.2)
+
+            HStack(spacing: 12) {
+                // Multi-page scan button
+                Button {
+                    showingMultiPageScan = true
+                } label: {
+                    HStack(spacing: 10) {
+                        ZStack {
+                            Circle()
+                                .fill(Color.plumeAccent.opacity(0.1))
+                                .frame(width: 40, height: 40)
+                            Image(systemName: "doc.viewfinder")
+                                .font(.system(size: 16))
+                                .foregroundColor(.plumeAccent)
+                        }
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Multi-Page Scan")
+                                .font(.system(size: 14, weight: .medium))
+                                .foregroundColor(.plumeTextPrimary)
+                            Text("OCR multiple pages")
+                                .font(.system(size: 11))
+                                .foregroundColor(.plumeTextSecondary)
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundColor(.plumeTextSecondary.opacity(0.5))
+                    }
+                    .padding(12)
+                    .background(Color.plumeSurface)
+                    .cornerRadius(12)
+                }
+                .buttonStyle(.plain)
+
+                // PDF Import button
+                Button {
+                    showingPDFImport = true
+                } label: {
+                    HStack(spacing: 10) {
+                        ZStack {
+                            Circle()
+                                .fill(Color.red.opacity(0.1))
+                                .frame(width: 40, height: 40)
+                            Image(systemName: "doc.fill")
+                                .font(.system(size: 16))
+                                .foregroundColor(.red)
+                        }
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Import PDF")
+                                .font(.system(size: 14, weight: .medium))
+                                .foregroundColor(.plumeTextPrimary)
+                            Text("Extract from PDF")
+                                .font(.system(size: 11))
+                                .foregroundColor(.plumeTextSecondary)
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundColor(.plumeTextSecondary.opacity(0.5))
+                    }
+                    .padding(12)
+                    .background(Color.plumeSurface)
+                    .cornerRadius(12)
+                }
+                .buttonStyle(.plain)
+            }
+            .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 3)
         }
     }
 

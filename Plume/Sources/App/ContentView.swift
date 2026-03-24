@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var bookStore: BookStore
     @StateObject private var subscriptionManager = SubscriptionManager.shared
+    @StateObject private var quoteStore = QuoteStore()
     @State private var selectedTab = 0
     @State private var showOnboarding = false
 
@@ -33,12 +34,20 @@ struct ContentView: View {
             .tag(2)
 
             NavigationStack {
+                CommunityFeedView()
+            }
+            .tabItem {
+                Label("Community", systemImage: "person.2.fill")
+            }
+            .tag(3)
+
+            NavigationStack {
                 ExportView()
             }
             .tabItem {
                 Label("Export", systemImage: "square.and.arrow.up")
             }
-            .tag(3)
+            .tag(4)
         }
         .tint(.plumeAccent)
         .sheet(isPresented: $showOnboarding) {
@@ -49,10 +58,12 @@ struct ContentView: View {
                 showOnboarding = true
             }
         }
+        .environmentObject(quoteStore)
     }
 }
 
 #Preview {
     ContentView()
         .environmentObject(BookStore())
+        .environmentObject(QuoteStore())
 }

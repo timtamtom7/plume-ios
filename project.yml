@@ -34,6 +34,7 @@ targets:
         ENABLE_PREVIEWS: true
     dependencies:
       - package: SQLite
+      - target: PlumeWidgetExtension
     info:
       path: Plume/Resources/Info.plist
       properties:
@@ -55,3 +56,24 @@ targets:
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
           UISceneConfigurations: {}
+
+  PlumeWidgetExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: PlumeWidget
+    settings:
+      base:
+        INFOPLIST_FILE: PlumeWidget/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.plume.app.widget
+        CODE_SIGN_STYLE: Automatic
+        SKIP_INSTALL: true
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+    info:
+      path: PlumeWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Plume Widget
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
