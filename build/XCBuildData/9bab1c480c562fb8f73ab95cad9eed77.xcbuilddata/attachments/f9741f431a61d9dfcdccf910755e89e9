@@ -1,0 +1,299 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Plume-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Plume-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Plume-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Plume-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Plume-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/App/ContentView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/App/PlumeApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PlumeApp~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/App/RealContent.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RealContent~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Graphics/QuoteCardView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/QuoteCardView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Models/Book.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/Book~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Models/BookRecommendation.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookRecommendation~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Models/ProgressEntry.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ProgressEntry~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Models/ReadingChallenge.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ReadingChallenge~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Models/SubscriptionTier.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionTier~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Services/BookStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Services/ExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Services/ImageStorage.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ImageStorage~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SubscriptionManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Utils/ColorExtension.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ColorExtension~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Utils/CoverPlaceholderView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CoverPlaceholderView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/AddBookSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/AddBookSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/BookDetailView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/BookDetailView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/CameraView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/CameraView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/ChallengeView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ChallengeView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/EmptyStateView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/EmptyStateView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/ExportView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/ExportView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/HomeView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/LibraryView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/LibraryView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/PricingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/PricingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/RecommendationsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/RecommendationsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/SettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/Plume/Sources/Views/UpdateProgressSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/UpdateProgressSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/plume-ios/build/Plume.build/Debug-iphoneos/Plume.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
