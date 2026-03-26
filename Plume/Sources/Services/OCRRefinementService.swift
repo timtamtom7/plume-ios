@@ -37,27 +37,28 @@ final class OCRRefinementService {
         let level: Int // 0 = chapter, 1 = section, etc.
     }
 
-    func extractTableOfContents(from pdf: PDFDocument) -> [TOCEntry] {
+    func extractTableOfContents(from pdfDocument: PDFDocument) -> [TOCEntry] {
         var entries: [TOCEntry] = []
 
         // Check if PDF has outline
-        if let outline = pdf.outlineRoot {
-            extractEntries(from: outline, level: 0, into: &entries)
+        if let outline = pdfDocument.outlineRoot {
+            extractEntries(from: outline, level: 0, into: &entries, pdf: pdfDocument)
         }
 
         return entries
     }
 
-    private func extractEntries(from outline: PDFOutline, level: Int, into entries: inout [TOCEntry]) {
+    private func extractEntries(from outline: PDFOutline, level: Int, into entries: inout [TOCEntry], pdf: PDFDocument) {
         for i in 0..<outline.numberOfChildren {
-            if let child = outline.child(at: UInt(i)) {
+            if let child = outline.child(at: i) {
+                let pageIdx: Int = child.destination?.page.flatMap { pdf.index(for: $0) } ?? 0
                 let entry = TOCEntry(
                     title: child.label ?? "Untitled",
-                    pageNumber: child.destination?.page.flatMap { pdf.index(for: $0) } ?? 0,
+                    pageNumber: pageIdx,
                     level: level
                 )
                 entries.append(entry)
-                extractEntries(from: child, level: level + 1, into: &entries)
+                extractEntries(from: child, level: level + 1, into: &entries, pdf: pdf)
             }
         }
     }
