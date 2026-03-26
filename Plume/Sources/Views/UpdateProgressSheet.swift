@@ -2,6 +2,7 @@ import SwiftUI
 
 struct UpdateProgressSheet: View {
     @EnvironmentObject var bookStore: BookStore
+    @EnvironmentObject var streakStore: StreakStore
     @Environment(\.dismiss) private var dismiss
 
     let book: Book
@@ -201,7 +202,9 @@ struct UpdateProgressSheet: View {
 
     private func saveProgress() {
         guard let page = enteredPage, page >= currentPage, page <= totalPages else { return }
+        let delta = max(page - currentPage, 0)
         bookStore.updateProgress(bookId: book.id, newPage: page)
+        streakStore.recordReadingActivity(pagesRead: delta)
         dismiss()
     }
 }

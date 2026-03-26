@@ -1,4 +1,5 @@
 import SwiftUI
+import PDFKit
 
 // MARK: - Quote Card View
 struct QuoteCardView: View {
@@ -6,27 +7,6 @@ struct QuoteCardView: View {
     let bookTitle: String
     let author: String
     let citationStyle: CitationStyle
-
-    enum CitationStyle: String, CaseIterable {
-        case plain = "Plain Text"
-        case apa = "APA"
-        case mla = "MLA"
-        case chicago = "Chicago"
-
-        func format(quote: String, title: String, author: String) -> String {
-            switch self {
-            case .plain:
-                return "\"\(quote)\"\n— \(author), \(title)"
-            case .apa:
-                let lastName = author.split(separator: " ").last.map(String.init) ?? author
-                return "\(lastName). (\(title))."
-            case .mla:
-                return "\"\(quote)\" \(title) by \(author)."
-            case .chicago:
-                return "\(author), \(title)."
-            }
-        }
-    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -343,7 +323,7 @@ struct CoverPlaceholderDesignView: View {
         quote: "So we beat on, boats against the current, borne back ceaselessly into the past.",
         bookTitle: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
-        citationStyle: .apa
+        citationStyle: CitationStyle.apa
     )
     .padding()
     .background(Color.plumeBackground)

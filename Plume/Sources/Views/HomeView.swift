@@ -4,6 +4,9 @@ struct HomeView: View {
     @EnvironmentObject var bookStore: BookStore
     @EnvironmentObject var subscriptionManager: SubscriptionManager
     @EnvironmentObject var challengeStore: ChallengeStore
+    @EnvironmentObject var quoteStore: QuoteStore
+    @EnvironmentObject var noteStore: NoteStore
+    @EnvironmentObject var streakStore: StreakStore
     @State private var showingAddBook = false
     @State private var showingUpdateProgress = false
     @State private var showingSettings = false
@@ -11,6 +14,7 @@ struct HomeView: View {
     @State private var showingBookLimitAlert = false
     @State private var showingMultiPageScan = false
     @State private var showingPDFImport = false
+    @State private var showingStreakDetail = false
     @State private var selectedBook: Book?
 
     var body: some View {
@@ -29,6 +33,9 @@ struct HomeView: View {
                         if let challenge = challengeStore.currentChallenge {
                             challengeProgressSection(challenge)
                         }
+
+                        // Reading Streak
+                        streakSection
 
                         // Currently Reading
                         if let current = bookStore.currentlyReading.first {
@@ -89,6 +96,9 @@ struct HomeView: View {
         .sheet(isPresented: $showingPDFImport) {
             PDFImportView()
         }
+        .sheet(isPresented: $showingStreakDetail) {
+            StreakView()
+        }
         .alert("Book Limit Reached", isPresented: $showingBookLimitAlert) {
             Button("Upgrade") {
                 showingPricing = true
@@ -104,6 +114,67 @@ struct HomeView: View {
             showingAddBook = true
         } else {
             showingBookLimitAlert = true
+        }
+    }
+
+    @ViewBuilder
+    private var streakSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Reading Streak")
+                .font(.custom("Georgia-Bold", size: 13))
+                .foregroundColor(.plumeTextSecondary)
+                .textCase(.uppercase)
+                .tracking(1.2)
+
+            VStack(spacing: 0) {
+                HStack(spacing: 16) {
+                    // Flame icon
+                    ZStack {
+                        Circle()
+                            .fill(streakStore.streak.currentStreak > 0 ? Color.orange.opacity(0.15) : Color.plumeTextSecondary.opacity(0.1))
+                            .frame(width: 52, height: 52)
+
+                        Image(systemName: streakStore.streak.currentStreak > 0 ? "flame.fill" : "flame")
+                            .font(.system(size: 24))
+                            .foregroundColor(streakStore.streak.currentStreak > 0 ? .orange : .plumeTextSecondary)
+                    }
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("\(streakStore.streak.currentStreak) days")
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                            .foregroundColor(.plumeTextPrimary)
+
+                        Text(streakStore.streak.streakMessage)
+                            .font(.system(size: 13))
+                            .foregroundColor(streakStore.streak.currentStreak > 0 ? .plumeAccent : .plumeTextSecondary)
+                    }
+
+                    Spacer()
+
+                    VStack(alignment: .trailing, spacing: 6) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "trophy.fill")
+                                .font(.system(size: 12))
+                                .foregroundColor(.plumeAccentSecondary)
+                            Text("Best: \(streakStore.streak.longestStreak)")
+                                .font(.system(size: 12, design: .monospaced))
+                                .foregroundColor(.plumeTextSecondary)
+                        }
+
+                        Button {
+                            showingStreakDetail = true
+                        } label: {
+                            Text("See more")
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundColor(.plumeAccent)
+                        }
+                    }
+                }
+                .padding(16)
+            }
+            .background(Color.plumeSurface)
+            .cornerRadius(12)
+            .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 3)
         }
     }
 

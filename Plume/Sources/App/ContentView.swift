@@ -2,8 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var bookStore: BookStore
+    @EnvironmentObject var quoteStore: QuoteStore
+    @EnvironmentObject var noteStore: NoteStore
+    @EnvironmentObject var streakStore: StreakStore
     @StateObject private var subscriptionManager = SubscriptionManager.shared
-    @StateObject private var quoteStore = QuoteStore()
     @State private var selectedTab = 0
     @State private var showOnboarding = false
 
@@ -26,12 +28,20 @@ struct ContentView: View {
             .tag(1)
 
             NavigationStack {
+                QuotesListView()
+            }
+            .tabItem {
+                Label("Quotes", systemImage: "quote.opening")
+            }
+            .tag(2)
+
+            NavigationStack {
                 RecommendationsView()
             }
             .tabItem {
                 Label("Discover", systemImage: "sparkles")
             }
-            .tag(2)
+            .tag(3)
 
             NavigationStack {
                 CommunityFeedView()
@@ -39,7 +49,7 @@ struct ContentView: View {
             .tabItem {
                 Label("Community", systemImage: "person.2.fill")
             }
-            .tag(3)
+            .tag(4)
 
             NavigationStack {
                 ExportView()
@@ -47,7 +57,7 @@ struct ContentView: View {
             .tabItem {
                 Label("Export", systemImage: "square.and.arrow.up")
             }
-            .tag(4)
+            .tag(5)
         }
         .tint(.plumeAccent)
         .sheet(isPresented: $showOnboarding) {
@@ -58,7 +68,6 @@ struct ContentView: View {
                 showOnboarding = true
             }
         }
-        .environmentObject(quoteStore)
     }
 }
 
@@ -66,4 +75,7 @@ struct ContentView: View {
     ContentView()
         .environmentObject(BookStore())
         .environmentObject(QuoteStore())
+        .environmentObject(NoteStore())
+        .environmentObject(StreakStore())
 }
+

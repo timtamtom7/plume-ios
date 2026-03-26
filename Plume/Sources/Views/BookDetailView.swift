@@ -3,9 +3,14 @@ import Charts
 
 struct BookDetailView: View {
     @EnvironmentObject var bookStore: BookStore
+    @EnvironmentObject var quoteStore: QuoteStore
+    @EnvironmentObject var noteStore: NoteStore
+    @EnvironmentObject var streakStore: StreakStore
     @Environment(\.dismiss) private var dismiss
     @State private var showingUpdateProgress = false
     @State private var showingDeleteAlert = false
+    @State private var showingNotes = false
+    @State private var showingSaveQuote = false
 
     let book: Book
 
@@ -84,6 +89,43 @@ struct BookDetailView: View {
                             }
                         }
 
+                        // Notes & Quote buttons
+                        HStack(spacing: 12) {
+                            Button {
+                                showingNotes = true
+                            } label: {
+                                HStack {
+                                    Image(systemName: "note.text")
+                                    Text("Notes")
+                                    if noteStore.notesForBook(book).count > 0 {
+                                        Text("(\(noteStore.notesForBook(book).count))")
+                                            .font(.system(size: 12, design: .monospaced))
+                                    }
+                                }
+                                .font(.system(size: 14, weight: .medium))
+                                .foregroundColor(.plumeAccent)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(Color.plumeAccent.opacity(0.1))
+                                .cornerRadius(10)
+                            }
+
+                            Button {
+                                showingSaveQuote = true
+                            } label: {
+                                HStack {
+                                    Image(systemName: "quote.opening")
+                                    Text("Quote")
+                                }
+                                .font(.system(size: 14, weight: .medium))
+                                .foregroundColor(.plumeAccent)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(Color.plumeAccent.opacity(0.1))
+                                .cornerRadius(10)
+                            }
+                        }
+
                         // Delete button
                         Button(role: .destructive) {
                             showingDeleteAlert = true
@@ -113,6 +155,12 @@ struct BookDetailView: View {
             }
             .sheet(isPresented: $showingUpdateProgress) {
                 UpdateProgressSheet(book: book)
+            }
+            .sheet(isPresented: $showingNotes) {
+                BookNotesView(book: book)
+            }
+            .sheet(isPresented: $showingSaveQuote) {
+                SaveQuoteSheetForBook(book: book)
             }
             .alert("Delete Book?", isPresented: $showingDeleteAlert) {
                 Button("Cancel", role: .cancel) {}
