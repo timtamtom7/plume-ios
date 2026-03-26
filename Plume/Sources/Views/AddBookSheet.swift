@@ -63,8 +63,8 @@ struct AddBookSheet: View {
                 CameraView(capturedImage: $capturedImage)
             }
             .onChange(of: capturedImage) { _, newImage in
-                if newImage != nil {
-                    capturedImagePath = saveImageTemporary(newImage!)
+                if let image = newImage {
+                    capturedImagePath = saveImageTemporary(image)
                     step = .camera
                 }
             }
@@ -270,7 +270,7 @@ struct AddBookSheet: View {
         let pages = Int(totalPages) ?? 0
         let start = Int(startPage) ?? 1
 
-        var coverPath: String? = capturedImagePath
+        let coverPath: String? = capturedImagePath
 
         if let book = bookStore.addBook(title: title, author: author, totalPages: pages, coverPath: coverPath, startPage: start) {
             // Save the cover image with the actual book ID

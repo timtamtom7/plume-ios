@@ -22,7 +22,8 @@ struct ReadingChallenge: Identifiable, Equatable {
     var isOnTrack: Bool {
         let calendar = Calendar.current
         let now = Date()
-        let startOfYear = calendar.date(from: calendar.dateComponents([.year], from: now))!
+        // Check that we can construct a valid date for the year
+        guard calendar.date(from: calendar.dateComponents([.year], from: now)) != nil else { return false }
         let dayOfYear = calendar.ordinality(of: .day, in: .year, for: now) ?? 1
         let totalDaysInYear = calendar.range(of: .day, in: .year, for: now)?.count ?? 365
         let expectedProgress = Double(dayOfYear) / Double(totalDaysInYear)
@@ -110,7 +111,7 @@ struct MonthlyChallenge: Identifiable, Equatable {
 
     var formattedDate: String {
         let calendar = Calendar.current
-        let date = calendar.date(from: DateComponents(year: year, month: month))!
+        guard let date = calendar.date(from: DateComponents(year: year, month: month)) else { return "\(month)/\(year)" }
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM yyyy"
         return formatter.string(from: date)
@@ -151,7 +152,7 @@ final class ChallengeStore: ObservableObject {
 
     private func setupDatabase() {
         do {
-            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
             let dbPath = documentsPath.appendingPathComponent("plume.sqlite3").path
             db = try Connection(dbPath)
             try createTables()

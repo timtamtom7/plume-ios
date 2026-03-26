@@ -202,7 +202,7 @@ final class ExportService: ObservableObject {
         }
 
         // Save to file
-        let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
         let fileName = title.replacingOccurrences(of: " ", with: "_") + "_quotes.pdf"
         let fileURL = documentsPath.appendingPathComponent(fileName)
 
@@ -371,7 +371,7 @@ final class ExportService: ObservableObject {
         }
 
         // Save to file
-        let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
         let fileName = "Plume_Quotes_\(Date().ISO8601Format()).md"
         let fileURL = documentsPath.appendingPathComponent(fileName)
 

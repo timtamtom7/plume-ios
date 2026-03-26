@@ -36,7 +36,7 @@ final class BookStore: ObservableObject {
 
     private func setupDatabase() {
         do {
-            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
             let dbPath = documentsPath.appendingPathComponent("plume.sqlite3").path
             db = try Connection(dbPath)
             try createTables()
