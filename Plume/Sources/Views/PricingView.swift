@@ -146,12 +146,12 @@ struct PricingTierCard: View {
 
                             if tier.isPopular {
                                 Text("Most Popular")
-                                    .font(.system(size: 10, weight: .semibold))
+                                    .font(Theme.fontCaptionSemibold)
                                     .foregroundColor(.white)
                                     .padding(.horizontal, 8)
                                     .padding(.vertical, 3)
                                     .background(Color.plumeAccentSecondary)
-                                    .cornerRadius(10)
+                                    .cornerRadius(Theme.cornerRadiusSmall)
                             }
                         }
 

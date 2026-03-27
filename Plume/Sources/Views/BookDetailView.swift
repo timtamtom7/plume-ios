@@ -234,7 +234,7 @@ struct BookDetailView: View {
                     AxisValueLabel {
                         if let day = value.as(Int.self) {
                             Text("D\(day)")
-                                .font(.system(size: 10))
+                                .font(Theme.fontCaption)
                                 .foregroundColor(.plumeTextSecondary)
                         }
                     }
@@ -246,7 +246,7 @@ struct BookDetailView: View {
                     AxisValueLabel {
                         if let page = value.as(Int.self) {
                             Text("\(page)")
-                                .font(.system(size: 10))
+                                .font(Theme.fontCaption)
                                 .foregroundColor(.plumeTextSecondary)
                         }
                     }
@@ -255,7 +255,7 @@ struct BookDetailView: View {
             .frame(height: 160)
             .padding(16)
             .background(Color.plumeSurface)
-            .cornerRadius(12)
+            .cornerRadius(Theme.cornerRadiusLarge)
         }
     }
 }

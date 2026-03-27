@@ -391,7 +391,7 @@ struct EditNoteSheet: View {
                                     .lineLimit(1)
 
                                 Text("Created \(note.createdAt.formatted(date: .abbreviated, time: .shortened))")
-                                    .font(.system(size: 10))
+                                    .font(Theme.fontCaption)
                                     .foregroundColor(.plumeTextSecondary.opacity(0.7))
                             }
 

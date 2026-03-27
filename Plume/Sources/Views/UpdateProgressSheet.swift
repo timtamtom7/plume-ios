@@ -215,15 +215,19 @@ struct NumpadButton: View {
     let action: () -> Void
 
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            Theme.hapticLight()
+            action()
+        }) {
             Text(label)
                 .font(.system(size: 22, weight: .medium))
                 .foregroundColor(color)
                 .frame(width: 72, height: 56)
                 .background(Color.plumeSurface)
-                .cornerRadius(8)
+                .cornerRadius(Theme.cornerRadiusSmall)
                 .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
         }
+        .accessibilityLabel(label == "✓" ? "Confirm" : (label == "⌫" ? "Delete" : (label == "C" ? "Clear" : "Number \(label)")))
     }
 }
 
@@ -232,15 +236,19 @@ struct QuickPageButton: View {
     let action: () -> Void
 
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            Theme.hapticLight()
+            action()
+        }) {
             Text(label)
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.plumeAccent)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
                 .background(Color.plumeAccent.opacity(0.1))
-                .cornerRadius(6)
+                .cornerRadius(Theme.cornerRadiusBadge)
         }
+        .accessibilityLabel("Add \(label.replacingOccurrences(of: "+", with: "")) pages")
     }
 }
 

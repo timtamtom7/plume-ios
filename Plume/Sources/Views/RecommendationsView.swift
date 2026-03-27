@@ -222,15 +222,15 @@ struct RecommendationBookCard: View {
             if !compact {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(book.genre)
-                        .font(.system(size: 10))
+                        .font(Theme.fontCaption)
                         .foregroundColor(.plumeAccent)
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(Color.plumeAccent.opacity(0.1))
-                        .cornerRadius(4)
+                        .cornerRadius(Theme.cornerRadiusBadge)
 
                     Text("\(book.pageCount) pages")
-                        .font(.system(size: 11))
+                        .font(Theme.fontCaption)
                         .foregroundColor(.plumeTextSecondary)
                 }
             }
@@ -259,14 +259,14 @@ struct SimilarBookRow: View {
 
                     VStack(spacing: 2) {
                         Text(book.title)
-                            .font(.custom("Georgia-Bold", size: 10))
+                            .font(.custom("Georgia-Bold", size: 11))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .lineLimit(2)
                             .padding(.horizontal, 6)
 
                         Text(book.author)
-                            .font(.system(size: 8))
+                            .font(.system(size: 11))
                             .foregroundColor(.white.opacity(0.8))
                             .lineLimit(1)
                     }

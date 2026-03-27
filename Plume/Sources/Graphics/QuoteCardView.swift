@@ -37,12 +37,12 @@ struct QuoteCardView: View {
             // Citation
             HStack {
                 Text(citationStyle.rawValue)
-                    .font(.system(size: 10, weight: .medium))
+                    .font(Theme.fontCaptionMedium)
                     .foregroundColor(.plumeAccent)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
                     .background(Color.plumeAccent.opacity(0.1))
-                    .cornerRadius(4)
+                    .cornerRadius(Theme.cornerRadiusBadge)
 
                 Spacer()
 
@@ -197,7 +197,7 @@ struct BookPageComposition: View {
                 VStack(alignment: .leading, spacing: 8) {
                     // Chapter heading
                     Text("Chapter One")
-                        .font(.system(size: 9, weight: .semibold))
+                        .font(Theme.fontCaptionSemibold)
                         .foregroundColor(.plumeTextSecondary)
 
                     // Text lines
@@ -212,7 +212,7 @@ struct BookPageComposition: View {
 
                     // Page number
                     Text("12")
-                        .font(.system(size: 9, design: .monospaced))
+                        .font(.system(size: 11, design: .monospaced))
                         .foregroundColor(.plumeTextSecondary)
 
                     Spacer()
@@ -246,7 +246,7 @@ struct BookPageComposition: View {
                     Spacer()
 
                     Text("13")
-                        .font(.system(size: 9, design: .monospaced))
+                        .font(.system(size: 11, design: .monospaced))
                         .foregroundColor(.plumeTextSecondary)
                 }
                 .padding(12)

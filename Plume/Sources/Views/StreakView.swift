@@ -142,7 +142,7 @@ struct StreakView: View {
     private var streakHeatmapLegend: some View {
         HStack(spacing: 4) {
             Text("Less")
-                .font(.system(size: 9))
+                .font(Theme.fontCaption)
                 .foregroundColor(.plumeTextSecondary)
 
             ForEach([0.0, 0.25, 0.5, 0.75, 1.0], id: \.self) { intensity in
@@ -152,7 +152,7 @@ struct StreakView: View {
             }
 
             Text("More")
-                .font(.system(size: 9))
+                .font(Theme.fontCaption)
                 .foregroundColor(.plumeTextSecondary)
         }
     }
@@ -260,7 +260,7 @@ struct DailyLogRow: View {
             // Day indicator
             VStack(spacing: 2) {
                 Text(dayOfWeek)
-                    .font(.system(size: 10, weight: .medium))
+                    .font(Theme.fontCaptionMedium)
                     .foregroundColor(.plumeTextSecondary)
 
                 Text(dayNumber)
@@ -368,7 +368,7 @@ struct StreakHeatmapView: View {
             HStack(spacing: 4) {
                 ForEach(["S", "M", "T", "W", "T", "F", "S"], id: \.self) { day in
                     Text(day)
-                        .font(.system(size: 9, weight: .medium))
+                        .font(Theme.fontCaptionMedium)
                         .foregroundColor(.plumeTextSecondary)
                         .frame(maxWidth: .infinity)
                 }

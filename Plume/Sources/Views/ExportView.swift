@@ -159,7 +159,7 @@ struct ExportView: View {
 
                 if !subscriptionManager.currentTier.features.contains(where: { $0.text.contains("Export") && $0.included }) {
                     Image(systemName: "lock.fill")
-                        .font(.system(size: 10))
+                        .font(Theme.fontCaption)
                         .foregroundColor(.plumeTextSecondary)
                 }
             }
@@ -225,7 +225,7 @@ struct ExportView: View {
 
                 if !subscriptionManager.currentTier.features.contains(where: { $0.text.contains("Export") && $0.included }) {
                     Image(systemName: "lock.fill")
-                        .font(.system(size: 10))
+                        .font(Theme.fontCaption)
                         .foregroundColor(.plumeTextSecondary)
                 }
             }
@@ -311,7 +311,7 @@ struct ExportView: View {
 
                 if !subscriptionManager.currentTier.features.contains(where: { $0.text.contains("Export") && $0.included }) {
                     Image(systemName: "lock.fill")
-                        .font(.system(size: 10))
+                        .font(Theme.fontCaption)
                         .foregroundColor(.plumeTextSecondary)
                 }
             }

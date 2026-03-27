@@ -75,10 +75,10 @@ struct SmallWidgetView: View {
             // Header
             HStack {
                 Image(systemName: "book.fill")
-                    .font(.system(size: 10))
+                    .font(.system(size: 11))
                     .foregroundColor(Color(hex: entry.coverColorHex) ?? .brown)
                 Text("Plume")
-                    .font(.system(size: 10, weight: .semibold))
+                    .font(.system(size: 11, weight: .semibold))
                     .foregroundColor(.secondary)
                 Spacer()
             }
@@ -93,7 +93,7 @@ struct SmallWidgetView: View {
                     .lineLimit(2)
 
                 Text(entry.bookAuthor)
-                    .font(.system(size: 10))
+                    .font(.system(size: 11))
                     .foregroundColor(.secondary)
                     .lineLimit(1)
 
@@ -105,11 +105,11 @@ struct SmallWidgetView: View {
 
                 HStack {
                     Text("\(Int(entry.progressPercent * 100))%")
-                        .font(.system(size: 9, weight: .medium))
+                        .font(.system(size: 11, weight: .medium))
                         .foregroundColor(.secondary)
                     Spacer()
                     Text("p. \(entry.currentPage)")
-                        .font(.system(size: 9))
+                        .font(.system(size: 11))
                         .foregroundColor(.secondary)
                 }
             } else {
@@ -119,7 +119,7 @@ struct SmallWidgetView: View {
                         .foregroundColor(.secondary)
 
                     Text("Open Plume to start tracking")
-                        .font(.system(size: 10))
+                        .font(.system(size: 11))
                         .foregroundColor(.secondary)
                 }
             }
@@ -161,10 +161,10 @@ struct MediumWidgetView: View {
                 // Header
                 HStack {
                     Image(systemName: "book.fill")
-                        .font(.system(size: 10))
+                        .font(.system(size: 11))
                         .foregroundColor(Color(hex: entry.coverColorHex) ?? .brown)
                     Text("Currently Reading")
-                        .font(.system(size: 10, weight: .semibold))
+                        .font(.system(size: 11, weight: .semibold))
                         .foregroundColor(.secondary)
                 }
 
@@ -198,7 +198,7 @@ struct MediumWidgetView: View {
                     // Stats row
                     HStack {
                         Text("\(entry.currentPage) / \(entry.totalPages) pages")
-                            .font(.system(size: 10))
+                            .font(.system(size: 11))
                             .foregroundColor(.secondary)
 
                         Spacer()
@@ -206,9 +206,9 @@ struct MediumWidgetView: View {
                         if let finishDate = entry.estimatedFinishDate {
                             HStack(spacing: 2) {
                                 Image(systemName: "clock")
-                                    .font(.system(size: 9))
+                                    .font(.system(size: 11))
                                 Text(finishDate)
-                                    .font(.system(size: 10, weight: .medium))
+                                    .font(.system(size: 11, weight: .medium))
                             }
                             .foregroundColor(Color(hex: entry.coverColorHex) ?? .brown)
                         }

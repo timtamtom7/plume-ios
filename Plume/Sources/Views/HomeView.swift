@@ -315,7 +315,7 @@ struct HomeView: View {
                                     .font(.system(size: 16, weight: .semibold, design: .monospaced))
                                     .foregroundColor(.plumeCurrentlyReading)
                                 Text("pages/day")
-                                    .font(.system(size: 10))
+                                    .font(Theme.fontCaption)
                                     .foregroundColor(.plumeTextSecondary)
                             }
 
@@ -327,7 +327,7 @@ struct HomeView: View {
                                     .font(.system(size: 14, weight: .semibold, design: .monospaced))
                                     .foregroundColor(.plumeAccent)
                                 Text("finishes")
-                                    .font(.system(size: 10))
+                                    .font(Theme.fontCaption)
                                     .foregroundColor(.plumeTextSecondary)
                             }
                         }

@@ -109,6 +109,7 @@ struct CommunityQuoteCard: View {
                 Button {
                     isLiked.toggle()
                     likeCount += isLiked ? 1 : -1
+                    Theme.hapticLight()
                 } label: {
                     HStack(spacing: 4) {
                         Image(systemName: isLiked ? "heart.fill" : "heart")
@@ -118,9 +119,14 @@ struct CommunityQuoteCard: View {
                     }
                     .font(.system(size: 13))
                 }
+                .accessibilityLabel(isLiked ? "Unlike" : "Like")
+                .accessibilityValue("\(likeCount) likes")
 
                 // Share button
-                Button(action: onShare) {
+                Button(action: {
+                    Theme.hapticLight()
+                    onShare()
+                }) {
                     HStack(spacing: 4) {
                         Image(systemName: "square.and.arrow.up")
                         Text("\(quote.shares)")
@@ -128,6 +134,8 @@ struct CommunityQuoteCard: View {
                     .font(.system(size: 13))
                     .foregroundColor(.plumeTextSecondary)
                 }
+                .accessibilityLabel("Share quote")
+                .accessibilityHint("Opens share sheet")
 
                 Spacer()
 
@@ -139,8 +147,9 @@ struct CommunityQuoteCard: View {
         }
         .padding(16)
         .background(Color.plumeSurface)
-        .cornerRadius(12)
+        .cornerRadius(Theme.cornerRadiusLarge)
         .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 3)
+        .accessibilityLabel("Quote from \(quote.bookTitle) by \(quote.author)")
     }
 }
 

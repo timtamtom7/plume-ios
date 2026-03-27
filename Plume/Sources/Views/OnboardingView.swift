@@ -248,7 +248,7 @@ struct CoverScanIllustration: View {
                         .cornerRadius(2)
 
                     Text("F. Scott Fitzgerald")
-                        .font(.system(size: 8))
+                        .font(.system(size: 11))
                         .foregroundColor(.white.opacity(0.8))
                 }
                 .padding(16)
@@ -338,7 +338,7 @@ struct ProgressIllustration: View {
                             .font(.system(size: 20, weight: .bold, design: .monospaced))
                             .foregroundColor(.plumeCurrentlyReading)
                         Text("pages/day")
-                            .font(.system(size: 10))
+                            .font(Theme.fontCaption)
                             .foregroundColor(.plumeTextSecondary)
                     }
 
@@ -349,7 +349,7 @@ struct ProgressIllustration: View {
                             .font(.system(size: 14, weight: .semibold, design: .monospaced))
                             .foregroundColor(.plumeAccent)
                         Text("finishes")
-                            .font(.system(size: 10))
+                            .font(Theme.fontCaption)
                             .foregroundColor(.plumeTextSecondary)
                     }
                 }

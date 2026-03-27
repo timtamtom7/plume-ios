@@ -340,7 +340,7 @@ struct PDFPageThumbnail: View {
 
             if extractedText != nil {
                 Image(systemName: "text.alignleft")
-                    .font(.system(size: 10))
+                    .font(Theme.fontCaption)
                     .foregroundColor(.plumeAccent)
             }
         }

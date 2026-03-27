@@ -203,12 +203,12 @@ struct MultiPageScanView: View {
                                         .cornerRadius(6)
 
                                     Text("\(index + 1)")
-                                        .font(.system(size: 10, weight: .bold))
+                                        .font(Theme.fontCaptionSemibold)
                                         .foregroundColor(.white)
                                         .padding(.horizontal, 6)
                                         .padding(.vertical, 2)
                                         .background(Color.black.opacity(0.6))
-                                        .cornerRadius(4)
+                                        .cornerRadius(Theme.cornerRadiusBadge)
                                         .padding(4)
                                 }
                                 .onTapGesture {
