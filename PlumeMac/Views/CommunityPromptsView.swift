@@ -15,6 +15,7 @@ struct CommunityPrompt: Identifiable {
 // MARK: - Community Prompts View
 
 struct CommunityPromptsView: View {
+    @Environment(\.appTheme) var theme
     @State private var prompts: [CommunityPrompt] = []
     @State private var selectedPrompt: CommunityPrompt?
     @State private var showingShareSheet = false
@@ -48,7 +49,7 @@ struct CommunityPromptsView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         Image(systemName: "flame.fill")
-                            .foregroundColor(.orange)
+                            .foregroundColor(theme.accentOrange)
                         Text("Today's Most Popular")
                             .font(.headline)
                     }
@@ -98,7 +99,7 @@ struct CommunityPromptsView: View {
 
                         Button(action: { upvote(prompt) }) {
                             Image(systemName: prompt.hasUpvoted ? "hand.thumbsup.fill" : "hand.thumbsup")
-                                .foregroundColor(prompt.hasUpvoted ? .blue : .secondary)
+                                .foregroundColor(prompt.hasUpvoted ? theme.inkBlue : .secondary)
                         }
                         .buttonStyle(.plain)
                         Text("\(prompt.upvotes)")
@@ -129,7 +130,6 @@ struct CommunityPromptsView: View {
             prompts[index].hasUpvoted.toggle()
             if prompts[index].hasUpvoted {
                 prompts[index] = CommunityPrompt(
-                    id: prompt.id,
                     text: prompt.text,
                     authorName: prompt.authorName,
                     category: prompt.category,
@@ -172,7 +172,10 @@ struct SharePromptSheet: View {
 
             TextEditor(text: $promptText)
                 .frame(minHeight: 100)
-                .border(Color.secondary.opacity(0.3), cornerRadius: 6)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.secondary.opacity(0.3), lineWidth: 1)
+                )
 
             Picker("Category", selection: $selectedCategory) {
                 ForEach(PromptCategory.allCases, id: \.self) { cat in

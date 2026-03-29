@@ -7,39 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11AD2D12094B9CA3490CE80B /* CommunityPromptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E656B9A6CD1C697FB8714 /* CommunityPromptsView.swift */; };
+		17EAC65F6CB6D53DEEEA0BFC /* AIWritingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403897185FC4210CA3EDB259 /* AIWritingService.swift */; };
 		2D960FA1235C3DF94B02E883 /* WritingEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DEF52B8746C17538D4303 /* WritingEditorView.swift */; };
+		307082B8EF37491D4248667C /* StyleAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3922C63C285A3B75270CB1 /* StyleAnalysisService.swift */; };
 		3E4CD0C7E6B8C18D1627DF12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CFA04C51AAFEB8B5FB438 /* HomeView.swift */; };
+		4448B7C95AE2E5C8180BA91B /* PublishingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59506AA62235E5C72D4290 /* PublishingService.swift */; };
 		4A3B2B1824044428A0657234 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10FD2BAED10A1C7125F698D /* StatsView.swift */; };
 		89094204AAD99C5975F134E1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F02F27517EEFEC2C129F7 /* Models.swift */; };
+		A76EB3CCAB62AD611EA0CC01 /* WritingChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54EC2C8BC7C1C7C69D25A5 /* WritingChallengesView.swift */; };
 		BE85F105EBA7CC4AAD216A4C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD4ACED9B60B67392EE6F5 /* Theme.swift */; };
+		C0F0BD633ED6609C104752C2 /* APPSTORE.md in Resources */ = {isa = PBXBuildFile; fileRef = B34444E42FC7B1C4F8E31326 /* APPSTORE.md */; };
 		CAEBB3B63E5674AD9D424A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCFA909F814202D89AF370 /* AppDelegate.swift */; };
 		CE8B4D2002DEB9F8750DD5DC /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62FD6B5C1AE1E16CDA9A23 /* MenuBarView.swift */; };
 		ED6416F347DA7225AF20B47A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C891FF8C3CBFAF4C33C8458 /* main.swift */; };
 		FDEF1CCD270719ABE83F0137 /* PromptLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF80BB33B512EFA2CAD2F9 /* PromptLibraryView.swift */; };
+		FF0A79CEB88447109E96DF94 /* PlumeMac.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 307F4FDAF0F839FDD847C62F /* PlumeMac.xcodeproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B98F72CEEE2234EE3BB291E /* PlumeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlumeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C891FF8C3CBFAF4C33C8458 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		252DEF52B8746C17538D4303 /* WritingEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingEditorView.swift; sourceTree = "<group>"; };
+		307F4FDAF0F839FDD847C62F /* PlumeMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PlumeMac.xcodeproj; sourceTree = "<group>"; };
 		364CFA04C51AAFEB8B5FB438 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		403897185FC4210CA3EDB259 /* AIWritingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWritingService.swift; sourceTree = "<group>"; };
 		4DCA4F02745C5B40ABD747C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4E3922C63C285A3B75270CB1 /* StyleAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleAnalysisService.swift; sourceTree = "<group>"; };
+		6F4E656B9A6CD1C697FB8714 /* CommunityPromptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPromptsView.swift; sourceTree = "<group>"; };
 		ABBF80BB33B512EFA2CAD2F9 /* PromptLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibraryView.swift; sourceTree = "<group>"; };
 		B10FD2BAED10A1C7125F698D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		B34444E42FC7B1C4F8E31326 /* APPSTORE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APPSTORE.md; sourceTree = "<group>"; };
 		C37F02F27517EEFEC2C129F7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CA62FD6B5C1AE1E16CDA9A23 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		DFCD4ACED9B60B67392EE6F5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E8DCFA909F814202D89AF370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB59506AA62235E5C72D4290 /* PublishingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishingService.swift; sourceTree = "<group>"; };
+		EF54EC2C8BC7C1C7C69D25A5 /* WritingChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingChallengesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		1F00EBE7A9C9252D9AEF29CB = {
 			isa = PBXGroup;
 			children = (
+				29307793C6E4084BE31E1717 /* Marketing */,
 				F6282BCA8C4A6D209398770D /* PlumeMac */,
+				8733A3278B8B6D4B371A5B7A /* Services */,
 				F28F441CF62B5D837B7DE666 /* Views */,
 				7130687D5C9EE2016E74E695 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		29307793C6E4084BE31E1717 /* Marketing */ = {
+			isa = PBXGroup;
+			children = (
+				B34444E42FC7B1C4F8E31326 /* APPSTORE.md */,
+			);
+			path = Marketing;
 			sourceTree = "<group>";
 		};
 		7130687D5C9EE2016E74E695 /* Products */ = {
@@ -50,13 +74,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8733A3278B8B6D4B371A5B7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				403897185FC4210CA3EDB259 /* AIWritingService.swift */,
+				EB59506AA62235E5C72D4290 /* PublishingService.swift */,
+				4E3922C63C285A3B75270CB1 /* StyleAnalysisService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F28F441CF62B5D837B7DE666 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F4E656B9A6CD1C697FB8714 /* CommunityPromptsView.swift */,
 				364CFA04C51AAFEB8B5FB438 /* HomeView.swift */,
 				CA62FD6B5C1AE1E16CDA9A23 /* MenuBarView.swift */,
 				ABBF80BB33B512EFA2CAD2F9 /* PromptLibraryView.swift */,
 				B10FD2BAED10A1C7125F698D /* StatsView.swift */,
+				EF54EC2C8BC7C1C7C69D25A5 /* WritingChallengesView.swift */,
 				252DEF52B8746C17538D4303 /* WritingEditorView.swift */,
 			);
 			path = Views;
@@ -69,7 +105,10 @@
 				4DCA4F02745C5B40ABD747C1 /* Info.plist */,
 				0C891FF8C3CBFAF4C33C8458 /* main.swift */,
 				C37F02F27517EEFEC2C129F7 /* Models.swift */,
+				307F4FDAF0F839FDD847C62F /* PlumeMac.xcodeproj */,
 				DFCD4ACED9B60B67392EE6F5 /* Theme.swift */,
+				29307793C6E4084BE31E1717 /* Marketing */,
+				8733A3278B8B6D4B371A5B7A /* Services */,
 				F28F441CF62B5D837B7DE666 /* Views */,
 			);
 			name = PlumeMac;
@@ -84,6 +123,7 @@
 			buildConfigurationList = 622ED7904AD32CFDAD57B117 /* Build configuration list for PBXNativeTarget "PlumeMac" */;
 			buildPhases = (
 				68556A020C7E0A0F45758C7C /* Sources */,
+				45C0B6F4D6764E9CD4E704E4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +165,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		45C0B6F4D6764E9CD4E704E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0BD633ED6609C104752C2 /* APPSTORE.md in Resources */,
+				FF0A79CEB88447109E96DF94 /* PlumeMac.xcodeproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68556A020C7E0A0F45758C7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EAC65F6CB6D53DEEEA0BFC /* AIWritingService.swift in Sources */,
 				CAEBB3B63E5674AD9D424A3E /* AppDelegate.swift in Sources */,
+				11AD2D12094B9CA3490CE80B /* CommunityPromptsView.swift in Sources */,
 				3E4CD0C7E6B8C18D1627DF12 /* HomeView.swift in Sources */,
 				CE8B4D2002DEB9F8750DD5DC /* MenuBarView.swift in Sources */,
 				89094204AAD99C5975F134E1 /* Models.swift in Sources */,
 				FDEF1CCD270719ABE83F0137 /* PromptLibraryView.swift in Sources */,
+				4448B7C95AE2E5C8180BA91B /* PublishingService.swift in Sources */,
 				4A3B2B1824044428A0657234 /* StatsView.swift in Sources */,
+				307082B8EF37491D4248667C /* StyleAnalysisService.swift in Sources */,
 				BE85F105EBA7CC4AAD216A4C /* Theme.swift in Sources */,
+				A76EB3CCAB62AD611EA0CC01 /* WritingChallengesView.swift in Sources */,
 				2D960FA1235C3DF94B02E883 /* WritingEditorView.swift in Sources */,
 				ED6416F347DA7225AF20B47A /* main.swift in Sources */,
 			);

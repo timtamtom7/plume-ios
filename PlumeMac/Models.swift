@@ -22,7 +22,7 @@ struct WritingPrompt: Identifiable {
     let category: PromptCategory
 }
 
-enum PromptCategory: String, CaseIterable {
+enum PromptCategory: String, CaseIterable, Codable {
     case creative = "Creative"
     case journal = "Journal"
     case reflection = "Reflection"
@@ -38,12 +38,20 @@ enum PromptCategory: String, CaseIterable {
     }
 }
 
-struct WritingSession: Identifiable {
-    let id = UUID()
+struct WritingSession: Identifiable, Codable {
+    let id: UUID
     let date: Date
     let wordCount: Int
     let duration: TimeInterval
     let promptUsed: String?
+
+    init(id: UUID = UUID(), date: Date, wordCount: Int, duration: TimeInterval, promptUsed: String?) {
+        self.id = id
+        self.date = date
+        self.wordCount = wordCount
+        self.duration = duration
+        self.promptUsed = promptUsed
+    }
 }
 
 struct DailyStats: Identifiable {

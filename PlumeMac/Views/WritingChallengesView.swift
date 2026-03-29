@@ -27,6 +27,7 @@ struct WritingChallenge: Identifiable {
 // MARK: - Writing Challenges View
 
 struct WritingChallengesView: View {
+    @Environment(\.appTheme) var theme
     @State private var challenges: [WritingChallenge] = []
     @State private var joinedChallenges: [WritingChallenge] = []
     @State private var currentStreak: Int = 0
@@ -51,7 +52,7 @@ struct WritingChallengesView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         Image(systemName: "flame.fill")
-                            .foregroundColor(.orange)
+                            .foregroundColor(theme.accentOrange)
                         Text("\(currentStreak)-day Streak")
                             .font(.headline)
                     }
@@ -60,7 +61,7 @@ struct WritingChallengesView: View {
                         .foregroundColor(.secondary)
                 }
                 .padding()
-                .background(Color.orange.opacity(0.1))
+                .background(theme.accentOrange.opacity(0.1))
                 .cornerRadius(8)
 
                 Spacer()
@@ -125,16 +126,16 @@ struct WritingChallengesView: View {
                             .font(.caption)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 2)
-                            .background(Color.green.opacity(0.2))
-                            .foregroundColor(.green)
+                            .background(theme.successGreen.opacity(0.2))
+                            .foregroundColor(theme.successGreen)
                             .cornerRadius(4)
                     } else if challenge.isExpired {
                         Text("Ended")
                             .font(.caption)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 2)
-                            .background(Color.gray.opacity(0.2))
-                            .foregroundColor(.gray)
+                            .background(theme.subtleGray.opacity(0.2))
+                            .foregroundColor(theme.subtleGray)
                             .cornerRadius(4)
                     }
                 }
@@ -169,7 +170,7 @@ struct WritingChallengesView: View {
                     .disabled(challenge.isJoined || challenge.isExpired)
                 } else {
                     Label("Completed!", systemImage: "checkmark.circle.fill")
-                        .foregroundColor(.green)
+                        .foregroundColor(theme.successGreen)
                 }
             }
             .padding(.vertical, 4)
@@ -268,7 +269,7 @@ struct WritingChallengesView: View {
                             Spacer()
                             if challenge.isCompleted {
                                 Label("Done", systemImage: "checkmark.circle.fill")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(theme.successGreen)
                             } else {
                                 Text("\(challenge.wordGoal) words")
                                     .foregroundColor(.secondary)
@@ -355,6 +356,7 @@ struct GoalRow: View {
 // MARK: - Streak Badge
 
 struct StreakBadge: View {
+    @Environment(\.appTheme) var theme
     let days: Int
     let currentStreak: Bool
 
@@ -362,13 +364,13 @@ struct StreakBadge: View {
         VStack(spacing: 4) {
             Image(systemName: currentStreak ? "flame.fill" : "flame")
                 .font(.title2)
-                .foregroundColor(currentStreak ? .orange : .gray)
+                .foregroundColor(currentStreak ? theme.accentOrange : theme.subtleGray)
             Text("\(days) days")
                 .font(.caption)
                 .foregroundColor(currentStreak ? .primary : .secondary)
         }
         .padding()
-        .background((currentStreak ? Color.orange : Color.gray).opacity(0.1))
+        .background((currentStreak ? theme.accentOrange : theme.subtleGray).opacity(0.1))
         .cornerRadius(8)
     }
 }

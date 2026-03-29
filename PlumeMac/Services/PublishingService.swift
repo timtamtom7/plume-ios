@@ -26,6 +26,7 @@ struct Contest: Identifiable {
 
 // MARK: - Publishing Service
 
+@MainActor
 final class PublishingService {
     static let shared = PublishingService()
 

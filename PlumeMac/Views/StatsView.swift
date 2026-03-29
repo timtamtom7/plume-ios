@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct StatsView: View {
+    @Environment(\.appTheme) var theme
     @ObservedObject var data: WritingData
     @State private var weeklyData: [DailyStats] = []
     @State private var monthlyTotal: Int = 0
@@ -16,7 +17,7 @@ struct StatsView: View {
             }
             .padding(20)
         }
-        .background(Theme.parchment)
+        .background(theme.parchment)
         .onAppear {
             generateMockData()
         }
@@ -26,10 +27,10 @@ struct StatsView: View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Your Statistics")
                 .font(.system(size: 22, weight: .light, design: .serif))
-                .foregroundColor(Theme.inkBlue)
+                .foregroundColor(theme.inkBlue)
             Text("Track your writing journey")
                 .font(.system(size: 13))
-                .foregroundColor(Theme.inkBlue.opacity(0.5))
+                .foregroundColor(theme.inkBlue.opacity(0.5))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -40,25 +41,25 @@ struct StatsView: View {
                 HStack(alignment: .top, spacing: 4) {
                     Text("\(data.streak)")
                         .font(.system(size: 48, weight: .light, design: .rounded))
-                        .foregroundColor(Theme.inkBlue)
+                        .foregroundColor(theme.inkBlue)
                     Text("days")
                         .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(Theme.inkBlue.opacity(0.5))
+                        .foregroundColor(theme.inkBlue.opacity(0.5))
                         .offset(y: 10)
                 }
                 Text("Current Streak")
                     .font(.system(size: 13, weight: .medium))
-                    .foregroundColor(Theme.inkBlue.opacity(0.6))
+                    .foregroundColor(theme.inkBlue.opacity(0.6))
             }
 
             Spacer()
 
             Image(systemName: "flame.fill")
                 .font(.system(size: 40))
-                .foregroundColor(.orange.opacity(0.8))
+                .foregroundColor(theme.accentOrange)
         }
         .padding(24)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(16)
     }
 
@@ -66,14 +67,14 @@ struct StatsView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Words Written")
                 .font(.system(size: 13, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.6))
+                .foregroundColor(theme.inkBlue.opacity(0.6))
                 .textCase(.uppercase)
                 .tracking(0.8)
 
             HStack(spacing: 12) {
-                wordStatCard(value: "\(data.todayWordCount)", label: "Today", color: Theme.featherGold)
-                wordStatCard(value: "\(weeklyTotal)", label: "This Week", color: Theme.inkBlue)
-                wordStatCard(value: "\(monthlyTotal)", label: "This Month", color: Theme.featherGold.opacity(0.7))
+                wordStatCard(value: "\(data.todayWordCount)", label: "Today", color: theme.featherGold)
+                wordStatCard(value: "\(weeklyTotal)", label: "This Week", color: theme.inkBlue)
+                wordStatCard(value: "\(monthlyTotal)", label: "This Month", color: theme.featherGold.opacity(0.7))
             }
 
             weeklyChart
@@ -84,14 +85,14 @@ struct StatsView: View {
         VStack(spacing: 6) {
             Text(value)
                 .font(.system(size: 24, weight: .semibold, design: .rounded))
-                .foregroundColor(Theme.inkBlue)
+                .foregroundColor(theme.inkBlue)
             Text(label)
                 .font(.system(size: 11, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.5))
+                .foregroundColor(theme.inkBlue.opacity(0.5))
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 16)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(12)
     }
 
@@ -99,17 +100,17 @@ struct StatsView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("This Week")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.6))
+                .foregroundColor(theme.inkBlue.opacity(0.6))
 
             HStack(alignment: .bottom, spacing: 8) {
                 ForEach(weeklyData) { day in
                     VStack(spacing: 6) {
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(day.wordCount > 0 ? Theme.featherGold : Theme.parchment)
+                            .fill(day.wordCount > 0 ? theme.featherGold : theme.parchment)
                             .frame(width: 28, height: chartHeight(for: day.wordCount))
                         Text(dayLabel(for: day.date))
                             .font(.system(size: 10, weight: .medium))
-                            .foregroundColor(Theme.inkBlue.opacity(0.4))
+                            .foregroundColor(theme.inkBlue.opacity(0.4))
                     }
                 }
             }
@@ -117,7 +118,7 @@ struct StatsView: View {
             .padding(.horizontal, 8)
         }
         .padding(16)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(12)
     }
 
@@ -146,29 +147,14 @@ struct StatsView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Goals")
                 .font(.system(size: 13, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.6))
+                .foregroundColor(theme.inkBlue.opacity(0.6))
                 .textCase(.uppercase)
                 .tracking(0.8)
 
             VStack(spacing: 16) {
-                goalRow(
-                    title: "Daily Word Goal",
-                    current: data.todayWordCount,
-                    target: data.dailyGoal,
-                    icon: "character.cursor.ibeam"
-                )
-                goalRow(
-                    title: "Daily Writing Streak",
-                    current: data.streak,
-                    target: 30,
-                    icon: "flame.fill"
-                )
-                goalRow(
-                    title: "Average Session",
-                    current: averageSessionLength,
-                    target: 30,
-                    icon: "clock"
-                )
+                goalRow(title: "Daily Word Goal", current: data.todayWordCount, target: data.dailyGoal, icon: "character.cursor.ibeam")
+                goalRow(title: "Daily Writing Streak", current: data.streak, target: 30, icon: "flame.fill")
+                goalRow(title: "Average Session", current: averageSessionLength, target: 30, icon: "clock")
             }
         }
     }
@@ -177,27 +163,27 @@ struct StatsView: View {
         HStack {
             Image(systemName: icon)
                 .font(.system(size: 14))
-                .foregroundColor(Theme.featherGold)
+                .foregroundColor(theme.featherGold)
                 .frame(width: 24)
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
                     Text(title)
                         .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(Theme.inkBlue)
+                        .foregroundColor(theme.inkBlue)
                     Spacer()
                     Text("\(current)/\(target)")
                         .font(.system(size: 13, weight: .medium))
-                        .foregroundColor(Theme.inkBlue.opacity(0.6))
+                        .foregroundColor(theme.inkBlue.opacity(0.6))
                 }
 
                 GeometryReader { geometry in
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(Theme.parchment)
+                            .fill(theme.parchment)
                             .frame(height: 8)
                         RoundedRectangle(cornerRadius: 4)
-                            .fill(current >= target ? Color.green : Theme.featherGold)
+                            .fill(current >= target ? theme.successGreen : theme.featherGold)
                             .frame(width: geometry.size.width * CGFloat(min(current, target)) / CGFloat(max(target, 1)), height: 8)
                     }
                 }
@@ -205,7 +191,7 @@ struct StatsView: View {
             }
         }
         .padding(16)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(12)
     }
 

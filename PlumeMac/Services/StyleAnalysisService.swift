@@ -66,6 +66,7 @@ struct SessionInsight {
 
 // MARK: - Style Analysis Service
 
+@MainActor
 final class StyleAnalysisService {
     static let shared = StyleAnalysisService()
 

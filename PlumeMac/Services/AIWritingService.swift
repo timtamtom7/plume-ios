@@ -67,6 +67,7 @@ struct AIWritingPrompt: Identifiable {
 
 // MARK: - AI Writing Service
 
+@MainActor
 final class AIWritingService {
     static let shared = AIWritingService()
 

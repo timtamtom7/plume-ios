@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.appTheme) var theme
     @ObservedObject var data: WritingData
     @Binding var showEditor: Bool
     @Binding var selectedPrompt: WritingPrompt?
@@ -14,17 +15,17 @@ struct HomeView: View {
             }
             .padding(24)
         }
-        .background(Theme.parchment.ignoresSafeArea())
+        .background(theme.parchment.ignoresSafeArea())
     }
 
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Good \(greeting)")
                 .font(.system(size: 28, weight: .light, design: .serif))
-                .foregroundColor(Theme.inkBlue)
+                .foregroundColor(theme.inkBlue)
             Text(formattedDate)
                 .font(.system(size: 13, weight: .regular))
-                .foregroundColor(Theme.inkBlue.opacity(0.6))
+                .foregroundColor(theme.inkBlue.opacity(0.6))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -33,17 +34,17 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Image(systemName: "feather.pointed")
-                    .foregroundColor(Theme.featherGold)
+                    .foregroundColor(theme.featherGold)
                 Text("Today's Prompt")
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(Theme.inkBlue.opacity(0.6))
+                    .foregroundColor(theme.inkBlue.opacity(0.6))
                     .textCase(.uppercase)
                     .tracking(1.2)
             }
 
             Text(data.todayPrompt?.text ?? "What will you write today?")
                 .font(.system(size: 20, weight: .regular, design: .serif))
-                .foregroundColor(Theme.inkBlue)
+                .foregroundColor(theme.inkBlue)
                 .lineSpacing(4)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -59,37 +60,22 @@ struct HomeView: View {
                 .foregroundColor(.white)
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
-                .background(Theme.inkBlue)
+                .background(theme.inkBlue)
                 .cornerRadius(8)
             }
             .buttonStyle(.plain)
         }
         .padding(24)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(16)
-        .shadow(color: Color.black.opacity(0.04), radius: 8, x: 0, y: 2)
+        .shadow(color: theme.parchment.opacity(0.6), radius: 8, x: 0, y: 2)
     }
 
     private var statsPreview: some View {
         HStack(spacing: 16) {
-            statCard(
-                icon: "flame.fill",
-                iconColor: .orange,
-                value: "\(data.streak)",
-                label: "Day Streak"
-            )
-            statCard(
-                icon: "character.cursor.ibeam",
-                iconColor: Theme.inkBlue,
-                value: "\(data.todayWordCount)",
-                label: "Words Today"
-            )
-            statCard(
-                icon: "target",
-                iconColor: Theme.featherGold,
-                value: "\(Int(Double(data.todayWordCount) / Double(data.dailyGoal) * 100))%",
-                label: "Goal"
-            )
+            statCard(icon: "flame.fill", iconColor: theme.accentOrange, value: "\(data.streak)", label: "Day Streak")
+            statCard(icon: "character.cursor.ibeam", iconColor: theme.inkBlue, value: "\(data.todayWordCount)", label: "Words Today")
+            statCard(icon: "target", iconColor: theme.featherGold, value: "\(Int(Double(data.todayWordCount) / Double(data.dailyGoal) * 100))%", label: "Goal")
         }
     }
 
@@ -100,16 +86,16 @@ struct HomeView: View {
                 .foregroundColor(iconColor)
             Text(value)
                 .font(.system(size: 22, weight: .semibold, design: .rounded))
-                .foregroundColor(Theme.inkBlue)
+                .foregroundColor(theme.inkBlue)
             Text(label)
                 .font(.system(size: 11, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.5))
+                .foregroundColor(theme.inkBlue.opacity(0.5))
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 16)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
         .cornerRadius(12)
-        .shadow(color: Color.black.opacity(0.04), radius: 6, x: 0, y: 2)
+        .shadow(color: theme.inkBlue.opacity(0.05), radius: 6, x: 0, y: 2)
     }
 
     private var greeting: String {

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct WritingEditorView: View {
+    @Environment(\.appTheme) var theme
     @ObservedObject var data: WritingData
     @Binding var isPresented: Bool
     let prompt: WritingPrompt?
@@ -27,7 +28,7 @@ struct WritingEditorView: View {
             writingArea
             footerBar
         }
-        .background(Theme.surface)
+        .background(theme.surface)
         .onAppear {
             data.startSession()
             startTimers()
@@ -43,9 +44,9 @@ struct WritingEditorView: View {
             Button(action: { isPresented = false }) {
                 Image(systemName: "xmark")
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(Theme.inkBlue.opacity(0.5))
+                    .foregroundColor(theme.inkBlue.opacity(0.5))
                     .frame(width: 28, height: 28)
-                    .background(Theme.parchment)
+                    .background(theme.parchment)
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
@@ -56,10 +57,10 @@ struct WritingEditorView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "clock")
                         .font(.system(size: 11))
-                        .foregroundColor(Theme.inkBlue.opacity(0.4))
+                        .foregroundColor(theme.inkBlue.opacity(0.4))
                     Text(formattedTime)
                         .font(.system(size: 13, weight: .medium, design: .monospaced))
-                        .foregroundColor(Theme.inkBlue.opacity(0.6))
+                        .foregroundColor(theme.inkBlue.opacity(0.6))
                 }
             }
 
@@ -68,9 +69,9 @@ struct WritingEditorView: View {
             Button(action: { showingTimer.toggle() }) {
                 Image(systemName: showingTimer ? "clock.fill" : "clock")
                     .font(.system(size: 12))
-                    .foregroundColor(Theme.inkBlue.opacity(0.5))
+                    .foregroundColor(theme.inkBlue.opacity(0.5))
                     .frame(width: 28, height: 28)
-                    .background(Theme.parchment)
+                    .background(theme.parchment)
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
@@ -85,16 +86,16 @@ struct WritingEditorView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "feather.pointed")
                         .font(.system(size: 11))
-                        .foregroundColor(Theme.featherGold)
+                        .foregroundColor(theme.featherGold)
                     Text(prompt.text)
                         .font(.system(size: 13, weight: .regular, design: .serif))
-                        .foregroundColor(Theme.inkBlue.opacity(0.7))
+                        .foregroundColor(theme.inkBlue.opacity(0.7))
                         .lineLimit(2)
                     Spacer()
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 12)
-                .background(Theme.parchment.opacity(0.5))
+                .background(theme.parchment.opacity(0.5))
             }
         }
     }
@@ -102,9 +103,9 @@ struct WritingEditorView: View {
     private var writingArea: some View {
         TextEditor(text: $text)
             .font(.system(size: 18, weight: .regular, design: .serif))
-            .foregroundColor(Theme.inkBlue)
+            .foregroundColor(theme.inkBlue)
             .scrollContentBackground(.hidden)
-            .background(Theme.surface)
+            .background(theme.surface)
             .padding(.horizontal, 20)
             .padding(.vertical, 16)
             .onChange(of: text) { _, newValue in
@@ -117,10 +118,10 @@ struct WritingEditorView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(wordCount) words")
                     .font(.system(size: 13, weight: .medium))
-                    .foregroundColor(Theme.inkBlue)
+                    .foregroundColor(theme.inkBlue)
                 Text("Auto-saving")
                     .font(.system(size: 11))
-                    .foregroundColor(Theme.inkBlue.opacity(0.4))
+                    .foregroundColor(theme.inkBlue.opacity(0.4))
             }
 
             Spacer()
@@ -129,23 +130,23 @@ struct WritingEditorView: View {
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 14)
-        .background(Theme.cardBg)
+        .background(theme.cardBg)
     }
 
     private var goalProgress: some View {
         HStack(spacing: 8) {
             Text("\(wordCount)/\(data.dailyGoal)")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundColor(Theme.inkBlue.opacity(0.6))
+                .foregroundColor(theme.inkBlue.opacity(0.6))
 
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 3)
-                        .fill(Theme.parchment)
+                        .fill(theme.parchment)
                         .frame(width: geometry.size.width, height: 6)
 
                     RoundedRectangle(cornerRadius: 3)
-                        .fill(Theme.featherGold)
+                        .fill(theme.featherGold)
                         .frame(width: min(CGFloat(wordCount) / CGFloat(data.dailyGoal) * geometry.size.width, geometry.size.width), height: 6)
                 }
             }
