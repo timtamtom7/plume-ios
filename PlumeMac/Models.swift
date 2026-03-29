@@ -1,5 +1,21 @@
 import Foundation
 
+// MARK: - Writing Entry
+
+struct WritingEntry: Identifiable {
+    let id = UUID()
+    var title: String
+    var content: String
+    var wordCount: Int { content.split(whereSeparator: { $0.isWhitespace || $0.isNewline }).count }
+    var createdAt: Date = Date()
+    var updatedAt: Date = Date()
+    var promptUsed: String?
+    var isPublished: Bool = false
+    var publishedTo: [Publication] = []
+}
+
+// MARK: - Writing Prompt
+
 struct WritingPrompt: Identifiable {
     let id = UUID()
     let text: String
