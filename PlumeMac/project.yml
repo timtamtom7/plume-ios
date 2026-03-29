@@ -1,0 +1,24 @@
+name: PlumeMac
+options:
+  bundleIdPrefix: com.tommaso
+  deploymentTarget:
+    macOS: "15.0"
+targets:
+  PlumeMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: .
+        excludes:
+          - "*.md"
+          - "project.yml"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tommaso.plume.mac
+        PRODUCT_NAME: Plume
+        INFOPLIST_FILE: Info.plist
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "15.0"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: YES
